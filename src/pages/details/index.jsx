@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { GlobalContext } from "../../context";
 
-export default function Details() {
+function Details() {
   const { id } = useParams();
   const {
     recipeDetailsData,
@@ -79,3 +79,5 @@ export default function Details() {
     </div>
   );
 }
+
+export default Details;

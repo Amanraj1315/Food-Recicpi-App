@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../../context";
 
-export default function Navbar() {
+function Navbar() {
   const { searchParam, setSearchParam , handleSubmit } = useContext(GlobalContext);
 
   console.log(searchParam);
@@ -43,3 +43,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;

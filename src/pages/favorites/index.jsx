@@ -3,7 +3,7 @@ import { useContext } from "react";
 import RecipeItem from "../../components/recipi-item";
 import { GlobalContext } from "../../context";
 
-export default function Favorites() {
+function Favorites() {
   const { favoritesList } = useContext(GlobalContext);
 
   return (
@@ -21,3 +21,4 @@ export default function Favorites() {
   );
 }
 
+export default Favorites;

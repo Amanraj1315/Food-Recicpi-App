@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export const GlobalContext = createContext(null);
 
-export default function GlobalState({ children }) {
+function GlobalState({ children }) {
   const [searchParam, setSearchParam] = useState("");
   const [loading, setLoading] = useState(false);
   const [recipeList, setRecipeList] = useState([]);
@@ -67,3 +67,5 @@ export default function GlobalState({ children }) {
     </GlobalContext.Provider>
   );
 }
+
+export default GlobalState ;
